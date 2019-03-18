@@ -1,5 +1,6 @@
 const express = require('express');
 const db = require('../../../config/database')
+const spotify = require('../../modules/spotify')
 
 const router = express.Router()
 router.get('/', async (req, res) => {
@@ -15,4 +16,14 @@ router.get('/', async (req, res) => {
     }
 })
 
-module.exports = app => app.use('/api/clientes', router);
+router.get('/albums', async (req, res) => {
+    try {
+        let albums = await spotify.retTitulos();
+        return res.send(albums);
+    } catch (err) {
+        console.log(err)
+        return res.status(400).send({ erro: 'Falha ao efetuar consulta.' });
+    }
+})
+
+module.exports = app => app.use('/api/v1/clientes', router);
