@@ -13,7 +13,7 @@ exports.up = function(knex, Promise) {
         table.string('cidade', 150)
         table.string('uf', 2)
         table.date('nascimento')
-        table.string('cpf_cnpj', 20).notNullable()
+        table.string('cpf_cnpj', 20)
         table.string('rg_ie', 20)
         table.string('telefone', 15)
         table.string('celular', 15)

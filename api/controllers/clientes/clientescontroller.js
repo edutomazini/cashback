@@ -1,13 +1,13 @@
 const express = require('express')
 const db = require('../../../config/database')
-const spotify = require('../../modules/spotify')
+const auth = require('../../middlewares/auth')
 
 const router = express.Router()
-router.get('/', async (req, res) => {
-  // const id = req.cliente_id
+router.get('/', auth, async (req, res) => {
+   const id = req.usuarioId
 
   try {
-    let clientes = await db('clientes')
+    let clientes = await db('clientes').where('id', id)
 
     return res.send(clientes)
   } catch (err) {
@@ -16,14 +16,6 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.get('/albums', async (req, res) => {
-  try {
-    let albums = await spotify.retTitulos()
-    return res.send(albums)
-  } catch (err) {
-    console.log(err)
-    return res.status(400).send({ erro: 'Falha ao efetuar consulta.' })
-  }
-})
+
 
 module.exports = app => app.use('/api/v1/clientes', router)

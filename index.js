@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser')
 
 const app = express()
 
+require('./api/middlewares')(app)
 require('./api/controllers/clientes/index')(app)
 require('./api/controllers/spotify/index')(app)
 
