@@ -1,0 +1,340 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-03-19T03:41:12.268Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"created": 1552619785849,
+			"description": "",
+			"modified": 1552619785849,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_5495f58b05ed46419aa31b48a4d3d06f",
+			"color": null,
+			"created": 1552619785926,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1552619785926,
+			"modified": 1552619785926,
+			"name": "New Environment",
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_cd2fedbdd4a24bea9d7859fc8551397c",
+			"cookies": [
+				{
+					"creation": "2019-03-15T03:28:07.879Z",
+					"domain": "accounts.spotify.com",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": false,
+					"id": "6802708300563864",
+					"key": "inapptestgroup",
+					"lastAccessed": "2019-03-18T00:08:13.853Z",
+					"maxAge": 3600,
+					"path": "/",
+					"secure": true
+				},
+				{
+					"creation": "2019-03-15T03:28:07.880Z",
+					"domain": "accounts.spotify.com",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": false,
+					"id": "5023981740196963",
+					"key": "csrf_token",
+					"lastAccessed": "2019-03-18T00:08:13.854Z",
+					"path": "/",
+					"secure": true,
+					"value": "AQC-N5uYVCULhsc0KSWa-Vqmbt8lxpQ-Am2yRxcy6Jv1bBOnr0HJ1KYov7JGEeZp0jbtpzMEPgeUXVQe"
+				},
+				{
+					"creation": "2019-03-17T16:27:10.066Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"id": "04751762828264594",
+					"key": "spotify_auth_state",
+					"lastAccessed": "2019-03-17T16:27:10.066Z",
+					"path": "/",
+					"value": "eSfpftFq0EoBwI5x"
+				},
+				{
+					"creation": "2019-03-17T16:30:02.403Z",
+					"domain": "accounts.spotify.com",
+					"hostOnly": true,
+					"id": "7372498141797779",
+					"key": "spotify_auth_state",
+					"lastAccessed": "2019-03-18T00:08:13.853Z",
+					"path": "/",
+					"value": "l8dwo5ZBC8fdeNvN"
+				}
+			],
+			"created": 1552619785939,
+			"modified": 1552867693854,
+			"name": "Default Jar",
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_ffca8dc4dd9c46f2b5dc33ade604277e",
+			"authentication": {},
+			"body": {},
+			"created": 1552620311726,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_51921d52311646efbbf55466139b4ee6",
+					"name": "Authorization",
+					"value": "Bearer BQByLePLLya9ieblA83KcbX9khcMdTn4-4iKkYmuRmQuyW-XfbFnarOOTIcK5ZqKV6GhGmBI71mGguHfIiCPOOYb-RYAkPYJScZgpeM-hKuxpUoPHHdkdCFxg0MZ-v5LZP4Lhw4mzqCjnZcWB_W5ELdt4JUeQOYA_Q"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552620311726,
+			"method": "GET",
+			"modified": 1552845611722,
+			"name": "spotifyauth",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/api/v1/autenticacoes/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fcb9fa2a4f43471a81e8e59015e2a773",
+			"authentication": {},
+			"body": {},
+			"created": 1552844349581,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_87e8d7146f634db9b9eee2f8a7be4b3a",
+					"name": "Accept",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_09d853f4e86b40e490daf823e2850576",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_84a9c1db607f402f86883ee9b38200ac",
+					"name": "Authorization",
+					"value": "Bearer BQBdE4cZOJ4r4Z-a0Bh_CVOuWP1sBaIYjix1VTPB0GKRoF-0x8KmKBRaas3vIpEC8doMwXKU-5tAvwLx2RGTABQ8opfRgUZuu5MkbIX5NN3MZgrRAPSSv_C7JByRCoU76ZLvu7iJQHc5_0ADOe6UjMGp2_01JT4bRQ"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552844349581,
+			"method": "GET",
+			"modified": 1552866822975,
+			"name": "search spotify",
+			"parameters": [
+				{
+					"id": "pair_97fb1f6c284b4eb5ab4e07ce4e3380f8",
+					"name": "q",
+					"value": "genre:rock"
+				},
+				{
+					"id": "pair_4dfd8336a240404bbab4133917833f57",
+					"name": "limit",
+					"value": "10"
+				},
+				{
+					"id": "pair_8761db0fd2774caeb3e7ea211c686489",
+					"name": "offset",
+					"value": "0"
+				},
+				{
+					"id": "pair_3119732ea6c44fb695ed9f1f28759314",
+					"name": "type",
+					"value": "track"
+				}
+			],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api.spotify.com/v1/search",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fb6d36424e8e47c79e7a62c4b520c9fe",
+			"authentication": {},
+			"body": {},
+			"created": 1552867556485,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
+					"name": "Authorization",
+					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552867556485,
+			"method": "GET",
+			"modified": 1552966693551,
+			"name": "search",
+			"parameters": [
+				{
+					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
+					"name": "genre",
+					"value": "pop"
+				},
+				{
+					"id": "pair_860369c81294484181dd1f7b25df4ff4",
+					"name": "offset",
+					"value": "50"
+				}
+			],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/spotify/search",
+			"_type": "request"
+		},
+		{
+			"_id": "req_40efd99af2114b528f6d4d38a49d267c",
+			"authentication": {},
+			"body": {},
+			"created": 1552877749327,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
+					"name": "Authorization",
+					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552856569353,
+			"method": "GET",
+			"modified": 1552966770722,
+			"name": "genres",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/spotify/genres",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6ff96cf107964b0f92b1cb4528f5dd50",
+			"authentication": {},
+			"body": {},
+			"created": 1552955973713,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
+					"name": "Authorization",
+					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552862062919,
+			"method": "GET",
+			"modified": 1552966709728,
+			"name": "clientes",
+			"parameters": [
+				{
+					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
+					"name": "genre",
+					"value": "pop"
+				},
+				{
+					"id": "pair_860369c81294484181dd1f7b25df4ff4",
+					"name": "offset",
+					"value": "50"
+				}
+			],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9aa20d3952e44263b9b4ecff32dbf9dd",
+			"authentication": {},
+			"body": {},
+			"created": 1552964693664,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
+					"name": "Authorization",
+					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552859316136,
+			"method": "GET",
+			"modified": 1552966734489,
+			"name": "albums",
+			"parameters": [
+				{
+					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
+					"name": "pagina",
+					"value": "1"
+				},
+				{
+					"id": "pair_860369c81294484181dd1f7b25df4ff4",
+					"name": "limit",
+					"value": "50"
+				},
+				{
+					"id": "pair_a9622755b2a64ed28ce303421c35d243",
+					"name": "campoordem",
+					"value": "genero"
+				},
+				{
+					"id": "pair_f1d84d6b45ea4adb96677aa5d1444aad",
+					"name": "tipoordem",
+					"value": "asc"
+				},
+				{
+					"id": "pair_4aa31668ff4645a591a465ca1e1f8949",
+					"name": "genero",
+					"value": "mpb,classical,rock,pop"
+				}
+			],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/albums/",
+			"_type": "request"
+		}
+	]
+}
