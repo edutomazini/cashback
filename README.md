@@ -14,10 +14,10 @@ a busca por álbum por gênero não está retornando dados. (https://github.com/
 https://api.spotify.com/v1/search?q=genre%3A%22acoustic%22&limit=10&offset=0&type=album<br>
  Talvez pelo fato de um álbum poder conter vários gêneros...
 <br>
- Foi feito uma busca por <i>track</i> (música) e armazenado os álbuns encontrados, com o cuidade de não deixar repetí-los.<br>
+ Foi feito uma busca por <i>track</i> (música) e armazenado os álbuns encontrados, com o cuidado de não deixar repeti-los.<br>
 <p>
 para alimentar** o banco com álbuns oriundos do spotify:<br>
-1 - faca login***:<br>
+1 - faça login***:<br>
 http://localhost:3000/api/v1/autenticacoes/login<br>
 será retornado o 'Bearer', por exemplo:<br>
 {"Authorization":"Bearer BQCVJAWNedQ0vFtYRDZHlncFLELyrLD5x1Z_qvLjdzXVPonwhINMtz851GCZG2w2ih3aSFVhldxat-gCd-RRDXmpJ-LYvwmg_O6mv5FxO2kAmhNUojFZwhQrMY1FNtNe1CwjolWDSKt92Tztkv8oQLeA0h7oGPICJA"}<br>
