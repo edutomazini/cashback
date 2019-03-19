@@ -8,11 +8,11 @@ clone ou faça o <i>download</i> do projeto e siga os passos abaixo:<br>
 3 - edite as credenciais de conexão com o banco no arquivo 'knexfile.js';<br>
 4 - execute 'knex migrate:latest';<br>
  5 - execute 'knex seed:run' para preencher a tabela com as taxas de <i>cachback</i>;<br>
-6 - execute o procedimento abaixo para alimentar a tabela de albums*:<br>
+ 6 - execute o procedimento abaixo para alimentar a tabela de <i>albums</i>*:<br>
 <p>
-a busca por album por gênero não está retornando dados. (https://github.com/spotify/web-api/issues/157)<br>
+a busca por álbum por gênero não está retornando dados. (https://github.com/spotify/web-api/issues/157)<br>
 https://api.spotify.com/v1/search?q=genre%3A%22acoustic%22&limit=10&offset=0&type=album<br>
- Talvez pelo fato de um album poder conter vários gêneros...
+ Talvez pelo fato de um álbum poder conter vários gêneros...
 <br>
  Foi feito uma busca por <i>track</i> (música) e armazenado os albuns encontrados, com o cuidade de não deixar repetí-los.<br>
 <p>
@@ -32,6 +32,6 @@ Isso irá preencher a tabela 'albums' com mais de 50 títulos para cada gênero.
 <p>  
   No projeto, encontra-se um arquivo .JSON com as configurações de <i>end-points</i> para facilitar os testes.
   <p>
-  &#42; optou-se por padronizar o plural de album como albums, como no inglês;<br>
-** optou-se por esse procedimento manual em fornecer o 'Bearer' por ser efetuado apenas uma vez (apenas para preencher a tabela de albums);<br>
+   &#42; optou-se por padronizar o plural de álbum como <i>albums</i>, como no inglês;<br>
+** optou-se por esse procedimento manual em fornecer o 'Bearer' por ser efetuado apenas uma vez (apenas para preencher a tabela de álbuns);<br>
 *** não é possível gerar o <strong>Bearer</strong> pelo insomnia, é preciso usar o browser (digite: http://localhost:3000/api/v1/autenticacoes/login) (testado no chrome e edge)  para gerar o <strong>Bearer</strong>.
