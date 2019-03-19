@@ -21,8 +21,9 @@ http://localhost:3000/api/v1/autenticacoes/login<br>
 será retornado o 'Bearer', por exemplo:<br>
 {"Authorization":"Bearer BQCVJAWNedQ0vFtYRDZHlncFLELyrLD5x1Z_qvLjdzXVPonwhINMtz851GCZG2w2ih3aSFVhldxat-gCd-RRDXmpJ-LYvwmg_O6mv5FxO2kAmhNUojFZwhQrMY1FNtNe1CwjolWDSKt92Tztkv8oQLeA0h7oGPICJA"}<br>
 <br>
-2 - edite o arquivo 'albumsseed.js' e preencha a constante authorization com o valor de "Authorization" acima.<br>
-3 - execute o comando 'node albumsseed', isso irá preencher a tabela 'albums' com mais de 50 titulos para cada genero.<br>
+2 - execute o comando 'node albumsseed' passando o valor de 'Bearer', por exemplo:
+node albumsseed BQCVJAWNedQ0vFtYRDZHlncFLELyrLD5x1Z_qvLjdzXVPonwhINMtz851GCZG2w2ih3aSFVhldxat-gCd-RRDXmpJ-LYvwmg_O6mv5FxO2kAmhNUojFZwhQrMY1FNtNe1CwjolWDSKt92Tztkv8oQLeA0h7oGPICJA
+Isso irá preencher a tabela 'albums' com mais de 50 titulos para cada genero.<br>
 <br>
 &#42; optou-se por padronizar o plural de album como albums, como no ingles;<br>
 ** optou-se por esse procedimento manual em fornecer o 'Bearer' por ser efetuado apenas uma vez (apenas para preencher a tabela de albums);<br>

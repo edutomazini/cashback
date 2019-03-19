@@ -1,0 +1,15 @@
+- paginacao
+- forcar login ?
+- verificar se existe logout
+- adicionar middlewares
+                - o login nao acrescenta 'auth'
+                - para toda requisicao acrescentar 'auth'
+                - no 'auth' validar o 'Bearer' e preencher informacoes do usuario (email)
+- banco
+                - salvar nome e email na tabela de clientes
+                - mostrar albuns paginado
+                - tabela de pedidos
+- apidoc
+                - mostrar documentacao padrao
+- bug
+                - ver como melhorar o try/catch
