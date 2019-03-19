@@ -4,9 +4,9 @@ var request = require('request') // "Request" library
 var querystring = require('querystring')
 
 // credenciais do desenvolvedor
-var client_id = 'fd5da17c7be649f0a484af6f6bcc3d12' // Your client id
-var client_secret = 'f4af0d575dd24a1c8e16d27e9f6b2c71' // Your secret
-var redirect_uri = 'http://localhost:3000/api/v1/autenticacoes/callback' // Your redirect uri
+var clientId = 'fd5da17c7be649f0a484af6f6bcc3d12' // Your client id
+var clientSecret = 'f4af0d575dd24a1c8e16d27e9f6b2c71' // Your secret
+var redirectUri = 'http://localhost:3000/api/v1/autenticacoes/callback' // Your redirect uri
 
 // as funcoes abaixo foram baseadas no exemplo do git:
 // https://github.com/spotify/web-api-auth-examples.git
@@ -31,9 +31,9 @@ router.get('/login', function (req, res) {
   res.redirect('https://accounts.spotify.com/authorize?' +
     querystring.stringify({
       response_type: 'code',
-      client_id: client_id,
+      client_id: clientId,
       scope: scope,
-      redirect_uri: redirect_uri,
+      redirect_uri: redirectUri,
       state: state
     }))
 })
@@ -59,33 +59,33 @@ router.get('/callback', function (req, res) {
       url: 'https://accounts.spotify.com/api/token',
       form: {
         code: code,
-        redirect_uri: redirect_uri,
+        redirect_uri: redirectUri,
         grant_type: 'authorization_code'
       },
       headers: {
-        'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
+        'Authorization': 'Basic ' + (new Buffer(clientId + ':' + clientSecret).toString('base64'))
       },
       json: true
     }
 
     request.post(authOptions, function (error, response, body) {
       if (!error && response.statusCode === 200) {
-        var access_token = body.access_token
-        var refresh_token = body.refresh_token
+        var accessToken = body.access_token
+        // var refresh_token = body.refresh_token
 
         var options = {
           url: 'https://api.spotify.com/v1/me',
-          headers: { 'Authorization': 'Bearer ' + access_token },
+          headers: { 'Authorization': 'Bearer ' + accessToken },
           json: true
         }
 
         // use the access token to access the Spotify Web API
-        request.get(options, function (error, response, body) {
+        request.get(options, function (_error, response, body) {
           console.log(body)
         })
 
         // we can also pass the token to the browser to make requests from there
-        res.send({ 'Authorization': 'Bearer ' + access_token })
+        res.send({ 'Authorization': 'Bearer ' + accessToken })
       } else {
         res.redirect('/#' +
           querystring.stringify({

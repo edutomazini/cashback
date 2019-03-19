@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-19T03:41:12.268Z",
+	"__export_date": "2019-03-19T04:35:45.760Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -84,35 +84,6 @@
 			"_type": "cookie_jar"
 		},
 		{
-			"_id": "req_ffca8dc4dd9c46f2b5dc33ade604277e",
-			"authentication": {},
-			"body": {},
-			"created": 1552620311726,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_51921d52311646efbbf55466139b4ee6",
-					"name": "Authorization",
-					"value": "Bearer BQByLePLLya9ieblA83KcbX9khcMdTn4-4iKkYmuRmQuyW-XfbFnarOOTIcK5ZqKV6GhGmBI71mGguHfIiCPOOYb-RYAkPYJScZgpeM-hKuxpUoPHHdkdCFxg0MZ-v5LZP4Lhw4mzqCjnZcWB_W5ELdt4JUeQOYA_Q"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1552620311726,
-			"method": "GET",
-			"modified": 1552845611722,
-			"name": "spotifyauth",
-			"parameters": [],
-			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "http://localhost:3000/api/v1/autenticacoes/login",
-			"_type": "request"
-		},
-		{
 			"_id": "req_fcb9fa2a4f43471a81e8e59015e2a773",
 			"authentication": {},
 			"body": {},
@@ -132,13 +103,13 @@
 				{
 					"id": "pair_84a9c1db607f402f86883ee9b38200ac",
 					"name": "Authorization",
-					"value": "Bearer BQBdE4cZOJ4r4Z-a0Bh_CVOuWP1sBaIYjix1VTPB0GKRoF-0x8KmKBRaas3vIpEC8doMwXKU-5tAvwLx2RGTABQ8opfRgUZuu5MkbIX5NN3MZgrRAPSSv_C7JByRCoU76ZLvu7iJQHc5_0ADOe6UjMGp2_01JT4bRQ"
+					"value": "Bearer BQCGxWWD0oWISx6aJKHgVV77FK4EjmGb_0ClNs5VXEq_9Liw0uaQ3byZ4zdVcww450to2LmNyhglkBw_OUcax2X0c1XdWxBI_boRTUxRG1NOhibtD64LLqgtkxtzqa6N4Jw-BnvRFAgfkxFCeSsftLRkAqX0mpKJHw"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552844349581,
 			"method": "GET",
-			"modified": 1552866822975,
+			"modified": 1552970105121,
 			"name": "search spotify",
 			"parameters": [
 				{
@@ -257,20 +228,9 @@
 			"isPrivate": false,
 			"metaSortKey": -1552862062919,
 			"method": "GET",
-			"modified": 1552966709728,
+			"modified": 1552970062709,
 			"name": "clientes",
-			"parameters": [
-				{
-					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
-					"name": "genre",
-					"value": "pop"
-				},
-				{
-					"id": "pair_860369c81294484181dd1f7b25df4ff4",
-					"name": "offset",
-					"value": "50"
-				}
-			],
+			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
@@ -297,7 +257,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552859316136,
 			"method": "GET",
-			"modified": 1552966734489,
+			"modified": 1552969660008,
 			"name": "albums",
 			"parameters": [
 				{

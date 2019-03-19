@@ -9,7 +9,7 @@ router.get('/', auth, async (req, res) => {
   const tipoOrdem = tipoordem || 'asc'
   const campoOrdem = campoordem || 'nome'
   const to = Number(pagina) || 1
-  const per_page = Number(limit) || 50
+  const perPage = Number(limit) || 50
   const genre = genero.replace(' ', '').split(',') || ['pop', 'rock', 'classical', 'mpb']
 
   try {
@@ -17,7 +17,7 @@ router.get('/', auth, async (req, res) => {
       .from('albums')
       .whereIn('genero', genre)
       .orderBy(campoOrdem, tipoOrdem)
-      .paginate(per_page, to, true)
+      .paginate(perPage, to, true)
 
     return res.send(album)
   } catch (err) {
