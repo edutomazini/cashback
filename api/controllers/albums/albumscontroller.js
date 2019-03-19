@@ -10,7 +10,7 @@ router.get('/', auth, async (req, res) => {
   const campoOrdem = campoordem || 'nome'
   const to = Number(pagina) || 1
   const per_page = Number(limit) || 50
-  const genre = genero.replace(' ','').split(',') || ['pop', 'rock', 'classical', 'mpb']
+  const genre = genero.replace(' ', '').split(',') || ['pop', 'rock', 'classical', 'mpb']
 
   try {
     const album = await db.select('*')
@@ -27,7 +27,6 @@ router.get('/', auth, async (req, res) => {
 })
 
 router.get('/:id', auth, async (req, res) => {
-
   try {
     const album = await db.select('*')
       .from('albums')

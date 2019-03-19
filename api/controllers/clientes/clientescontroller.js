@@ -4,7 +4,7 @@ const auth = require('../../middlewares/auth')
 
 const router = express.Router()
 router.get('/', auth, async (req, res) => {
-   const id = req.usuarioId
+  const id = req.usuarioId
 
   try {
     const clientes = await db('clientes').where('id', id)

@@ -4,12 +4,13 @@ const db = require('../../config/database')
 
 module.exports = async (req, res, next) => {
   try {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers.authorization
 
-    if (!authHeader)
+    if (!authHeader) {
       return res.status(401).send({ erro: 'Token nao foi informado.' })
+    }
 
-    // valida o usuario
+    // valida o usuario no spotify
     const usuario = await spotify.usuario(authHeader)
 
     // se nao existe no banco grava o novo usuario
@@ -17,8 +18,8 @@ module.exports = async (req, res, next) => {
     if (usuarios.length === 0) {
       console.log('inserindo')
       await db('clientes').insert({
-        nome: usuario.display_name === null ? usuario.email.split('@')[0]: usuario.display_name,
-        email: usuario.email,
+        nome: usuario.display_name === null ? usuario.email.split('@')[0] : usuario.display_name,
+        email: usuario.email
       })
     }
 
@@ -29,7 +30,6 @@ module.exports = async (req, res, next) => {
     req.usuarioId = usuarios.id
 
     next()
-
   } catch (err) {
     console.log(err)
     res.status(401).json({
