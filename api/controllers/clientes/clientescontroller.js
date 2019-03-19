@@ -7,7 +7,7 @@ router.get('/', auth, async (req, res) => {
    const id = req.usuarioId
 
   try {
-    let clientes = await db('clientes').where('id', id)
+    const clientes = await db('clientes').where('id', id)
 
     return res.send(clientes)
   } catch (err) {
@@ -15,7 +15,5 @@ router.get('/', auth, async (req, res) => {
     return res.status(400).send({ erro: 'Falha ao efetuar consulta.' })
   }
 })
-
-
 
 module.exports = app => app.use('/api/v1/clientes', router)

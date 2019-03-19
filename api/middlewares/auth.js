@@ -13,9 +13,6 @@ module.exports = async (req, res, next) => {
     const usuario = await spotify.usuario(authHeader)
 
     // se nao existe no banco grava o novo usuario
-    console.log('usuario ' + usuario.display_name === null ? usuario.email.split('@')[0]: usuario.display_name)
-    console.log('email ' + usuario.email)
-
     let usuarios = await db('clientes').where('email', usuario.email)
     if (usuarios.length === 0) {
       console.log('inserindo')

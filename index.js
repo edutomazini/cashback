@@ -7,6 +7,7 @@ const app = express()
 
 require('./api/middlewares')(app)
 require('./api/controllers/clientes/index')(app)
+require('./api/controllers/albums/index')(app)
 require('./api/controllers/spotify/index')(app)
 
 app.use('/', express.static(path.join(__dirname, 'public')))
