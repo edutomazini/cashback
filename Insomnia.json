@@ -1,15 +1,15 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-20T05:50:09.975Z",
+	"__export_date": "2019-03-20T23:56:28.857Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
 			"_id": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"created": 1552619785849,
 			"description": "",
-			"modified": 1552619785849,
-			"name": "Insomnia",
+			"modified": 1553124772035,
+			"name": "cashback",
 			"parentId": null,
 			"_type": "workspace"
 		},
@@ -91,7 +91,7 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552844349581,
-			"description": "",
+			"description": "Faz busca na api do spotify, mas usando acesso direto",
 			"headers": [
 				{
 					"id": "pair_87e8d7146f634db9b9eee2f8a7be4b3a",
@@ -106,13 +106,13 @@
 				{
 					"id": "pair_84a9c1db607f402f86883ee9b38200ac",
 					"name": "Authorization",
-					"value": "Bearer BQCGxWWD0oWISx6aJKHgVV77FK4EjmGb_0ClNs5VXEq_9Liw0uaQ3byZ4zdVcww450to2LmNyhglkBw_OUcax2X0c1XdWxBI_boRTUxRG1NOhibtD64LLqgtkxtzqa6N4Jw-BnvRFAgfkxFCeSsftLRkAqX0mpKJHw"
+					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552844349581,
 			"method": "GET",
-			"modified": 1552970105121,
+			"modified": 1553124507378,
 			"name": "search spotify",
 			"parameters": [
 				{
@@ -151,19 +151,19 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552867556485,
-			"description": "",
+			"description": "Faz busca na api do spotify, mas usando a integracao",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1552867556485,
+			"metaSortKey": -1552850459467,
 			"method": "GET",
-			"modified": 1552966693551,
-			"name": "search",
+			"modified": 1553124691178,
+			"name": "search spotify cash",
 			"parameters": [
 				{
 					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
@@ -183,7 +183,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/spotify/search",
+			"url": "{{ local  }}api/v1/spotify/search",
 			"_type": "request"
 		},
 		{
@@ -191,18 +191,18 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552877749327,
-			"description": "",
+			"description": "Retorna todos os generos acessando a api do spotify (integrando as apis)",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552856569353,
 			"method": "GET",
-			"modified": 1552966770722,
+			"modified": 1553124155491,
 			"name": "genres",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -212,7 +212,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/spotify/genres",
+			"url": "{{ local  }}api/v1/spotify/genres",
 			"_type": "request"
 		},
 		{
@@ -220,18 +220,18 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552955973713,
-			"description": "",
+			"description": "Retorna informação de usuario logado (autenticado pelo spotify)\n\nSe cliente normal solicitar a informacao, dará erro 401.",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQBo9geLfJ-eCH2LP89DhWRerL0KQ55zV5PVuM_8VNu38JH5Yz0QCwqjg_mQQpPJi5Y06sYjoR0h5Glcb8ffEK4CmPc_n2hvtBVaO2lJ1iWKUuypglD0Vnm0gM8WXOryJ_nouUqA__jiIV_C4G3q9nrQxuMhg4U3sQ"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjI4MTYsImV4cCI6MTU1MzIwOTIxNn0.kIDUoOM4MPWZizU19R0YwOpoCl8_7ckaX6Ff4dQeDkE"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552862062919,
 			"method": "GET",
-			"modified": 1553046629228,
+			"modified": 1553123337499,
 			"name": "usuarios",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -241,7 +241,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/usuarios",
+			"url": "{{ local }}api/v1/usuarios",
 			"_type": "request"
 		},
 		{
@@ -249,24 +249,24 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552964693664,
-			"description": "",
+			"description": "Retorna informacoes de albuns\n\nSe colocar /ID retorna album especifico",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjUyMTYsImV4cCI6MTU1MzIxMTYxNn0.xFuU9ag6-x_1FPlIhA2W9xMfu7AwaDwmJBy-ob9h_Wc"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552859316136,
 			"method": "GET",
-			"modified": 1553059946274,
+			"modified": 1553125585907,
 			"name": "albums",
 			"parameters": [
 				{
 					"id": "pair_860369c81294484181dd1f7b25df4ff4",
 					"name": "limit",
-					"value": "100"
+					"value": "200"
 				},
 				{
 					"id": "pair_a9622755b2a64ed28ce303421c35d243",
@@ -281,7 +281,7 @@
 				{
 					"id": "pair_4aa31668ff4645a591a465ca1e1f8949",
 					"name": "genero",
-					"value": "mpb,classical,rock,pop"
+					"value": "rock,classical, pop, mpb"
 				},
 				{
 					"id": "pair_d6def783431b4f999ca108fbd2d3ff52",
@@ -307,7 +307,7 @@
 				"text": "{\n\t\"email\":\"eduardotomazini@gmail.com\",\n\t\"senha\":\"pretinha\"\n}"
 			},
 			"created": 1553048263150,
-			"description": "",
+			"description": "Efetua login de cliente (nao é o mesmo que o login do spotify)\n\nLogin do spotify deve ser feito pelo browser para retornar o token do spotify",
 			"headers": [
 				{
 					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
@@ -318,8 +318,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1552860689527.5,
 			"method": "POST",
-			"modified": 1553050760765,
-			"name": "clientes login",
+			"modified": 1553125145170,
+			"name": "clientesLogin",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"settingDisableRenderRequestBody": false,
@@ -328,7 +328,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes/login",
+			"url": "{{ local }}api/v1/clientes/login",
 			"_type": "request"
 		},
 		{
@@ -339,7 +339,7 @@
 				"text": ""
 			},
 			"created": 1553050570463,
-			"description": "",
+			"description": "Retorna informacao do cliente logado ou do usuario (spotify)",
 			"headers": [
 				{
 					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
@@ -349,13 +349,13 @@
 				{
 					"id": "pair_c57c748d70474e9588f74350748fbd07",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1552860002831.75,
+			"metaSortKey": -1552861376223.25,
 			"method": "GET",
-			"modified": 1553050671295,
+			"modified": 1553124615275,
 			"name": "clientes",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -365,7 +365,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes",
+			"url": "{{ local }}api/v1/clientes",
 			"_type": "request"
 		},
 		{
@@ -373,10 +373,10 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"nome\":\"teste232\",\n\t\"endereco\": \"rua 1\",\n\t\"numero\": \"100\",\n\t\"cep\":\"14000000\",\n\t\"bairro\":\"centro\",\n\t\"cidade\":\"ribeirao\",\n\t\"email\":\"nada@nada.com\",\n\t\"senha\":\"nada\"\n}"
+				"text": "{\n\t\"nome\":\"eduardos tomazinis\",\n\t\"endereco\": \"rua 1\",\n\t\"numero\": \"100\",\n\t\"cep\":\"14000000\",\n\t\"bairro\":\"centro\",\n\t\"cidade\":\"ribeirao\",\n\t\"email\":\"eduardotomazinis@gmail.com\",\n\t\"senha\":\"pretinha\"\n}"
 			},
 			"created": 1553051009034,
-			"description": "",
+			"description": "Efetua cadastro de cliente.\n\nSomente usuario do spotify pode efetuar cadastro.",
 			"headers": [
 				{
 					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
@@ -386,14 +386,14 @@
 				{
 					"id": "pair_c57c748d70474e9588f74350748fbd07",
 					"name": "Authorization",
-					"value": "Bearer BQD4U0IwnzxyoC4iWnWE187rz6o_Ku60ACS8fDX2M0Igr5BuzDBEamtGB7nn5xduDGnqRHiqmKvw6_UEFPy5a7H1I9q0LvX5gWVBxUIo2OGJwzP1TZ41BNV_dzfxJfDz-YXYQSgoD-gdL9Vo6ot00gIX5zDU1ULsiA"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjI4MTYsImV4cCI6MTU1MzIwOTIxNn0.kIDUoOM4MPWZizU19R0YwOpoCl8_7ckaX6Ff4dQeDkE"
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1552859659483.875,
+			"metaSortKey": -1552861032875.375,
 			"method": "POST",
-			"modified": 1553051305007,
-			"name": "clientes cadastro",
+			"modified": 1553124632468,
+			"name": "clientesCadastro",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"settingDisableRenderRequestBody": false,
@@ -402,7 +402,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes",
+			"url": "{{ local }}api/v1/clientes",
 			"_type": "request"
 		},
 		{
@@ -410,10 +410,10 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\"albums\": [\n    {\n      \"id\": 15149\n    },\n    {\n      \"id\": 15270\n    }\n\t]\n}"
+				"text": "{\n\"albums\": [\n    {\n      \"id\": 1092\n    },\n    {\n      \"id\": 1093\n    },\n\t    {\n      \"id\": 1094\n    }\n\t]\n}"
 			},
 			"created": 1553052794518,
-			"description": "",
+			"description": "Efetua pedido do cliente, calculo de cashback de acordo com o dia comprado.",
 			"headers": [
 				{
 					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
@@ -423,14 +423,14 @@
 				{
 					"id": "pair_c57c748d70474e9588f74350748fbd07",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjo2LCJpYXQiOjE1NTMxMjIyNTYsImV4cCI6MTU1MzIwODY1Nn0.30nR4wrIrD9-Z_lmbbVCFDHhu2LZ4-Dy1w9igSAVDAs"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552859831157.8125,
 			"method": "POST",
-			"modified": 1553057915632,
-			"name": "clientes comprar",
+			"modified": 1553123443706,
+			"name": "clientesPedidos",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"settingDisableRenderRequestBody": false,
@@ -439,7 +439,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes/comprar",
+			"url": "{{ heroku }}api/v1/clientes/pedido",
 			"_type": "request"
 		},
 		{
@@ -450,7 +450,7 @@
 				"text": ""
 			},
 			"created": 1553057938312,
-			"description": "",
+			"description": "Retorna informacoes de todos os pedidos ou de um ID especifico\n\nobs,\npossui um bug conhecido, o comportamento deveria ser:\n\nSe cliente estiver logado, retorna informacoes somente do id do cliente.\nSe usuario (spotfiy) estiver logado, retorna informacao de qualquer cliente.",
 			"headers": [
 				{
 					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
@@ -460,19 +460,39 @@
 				{
 					"id": "pair_c57c748d70474e9588f74350748fbd07",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjUyMTYsImV4cCI6MTU1MzIxMTYxNn0.xFuU9ag6-x_1FPlIhA2W9xMfu7AwaDwmJBy-ob9h_Wc"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552859916994.7812,
 			"method": "GET",
-			"modified": 1553060852176,
+			"modified": 1553125415153,
 			"name": "clientesPedidos",
 			"parameters": [
 				{
 					"id": "pair_3d27aba597d04a5e8782332f38088410",
 					"name": "idpedido",
+					"value": ""
+				},
+				{
+					"id": "pair_d77b007a98f04482acb9b3edf93d10ee",
+					"name": "tipoordem",
+					"value": "desc"
+				},
+				{
+					"id": "pair_3631ba2254dd45c58695080ad19e8202",
+					"name": "campoordem",
+					"value": "idPedido"
+				},
+				{
+					"id": "pair_581db016f5704941b238dab6c7ec5132",
+					"name": "pagina",
 					"value": "1"
+				},
+				{
+					"id": "pair_7b14a63869ce4a37a451774cc3d6d50e",
+					"name": "limit",
+					"value": "200"
 				}
 			],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -482,7 +502,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes/pedidos",
+			"url": "{{ local }}api/v1/clientes/pedido",
 			"_type": "request"
 		}
 	]

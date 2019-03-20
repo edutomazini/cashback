@@ -4,6 +4,9 @@ const auth = require('../../middlewares/auth')
 
 const router = express.Router()
 router.get('/', auth, async (req, res) => {
+  if (req.usuarioTipo !== 'spotify')
+    return res.status(401).send({ status: 401, message: 'UNAUTHORIZED' })
+
   const id = req.usuarioId
 
   try {

@@ -17,7 +17,7 @@ router.get('/', auth, async (req, res) => {
       .from('albums')
       .whereIn('genero', genre)
       .orderBy(campoOrdem, tipoOrdem)
-      .paginate(perPage, to, true)
+      .paginate((perPage > 100 ? 100 : perPage), to, true)
 
     return res.send(album)
   } catch (err) {

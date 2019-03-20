@@ -13,6 +13,10 @@ const gerarToken = (cliente_id) => {
 router.post('/login', async (req, res) => {
   const { email, senha } = req.body
   try {
+    if (email === '' || email === null || senha === '' || senha === null) {
+      return res.status(401).send({ erro: 'Falha ao localizar cadastro.' })
+    }
+    
     const clientes = await db('clientes').where('email', email).andWhere('senha', senha).first()
 
     if (!clientes.length === 0) {

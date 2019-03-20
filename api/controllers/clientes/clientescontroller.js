@@ -35,7 +35,7 @@ router.post('/', auth, async (req, res) => {
   }
 })
 
-router.post('/comprar', auth, async (req, res) => {
+router.post('/pedido', auth, async (req, res) => {
   const discos = req.body
   const usuarioId = req.usuarioId
   let regDisco
@@ -96,10 +96,10 @@ router.post('/comprar', auth, async (req, res) => {
 // seguindo a logica da 'autenticacao' mencionada no read.me faria sentido apenas usuarios do spotify poderem ver todos os pedidos.
 // mas para efeito didatico deixarei que todos listem os pedidos
 
-router.get('/pedidos', auth, async (req, res) => {
+router.get('/pedido', auth, async (req, res) => {
   const { idpedido, pagina, limit, campoordem, tipoordem } = req.query
 
-  const tipoOrdem = tipoordem || 'asc'
+  const tipoOrdem = tipoordem || 'desc'
   const campoOrdem = campoordem || 'idPedido'
   const to = Number(pagina) || 1
   const perPage = Number(limit) || 50
@@ -125,7 +125,7 @@ router.get('/pedidos', auth, async (req, res) => {
       .innerJoin('clientes', 'clientes.id', 'clientepedidos.cliente_id')
       .whereRaw(whereraw)
       .orderBy(campoOrdem, tipoOrdem)
-      .paginate(perPage, to, true)
+      .paginate((perPage > 100 ? 100 : perPage), to, true)
 
     await asyncForEach(regPedidos.data, async (pedido) => {
       pedido.albums = await db.select('albums.nome as nomeAlbum',
