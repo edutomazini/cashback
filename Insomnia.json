@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-19T04:35:45.760Z",
+	"__export_date": "2019-03-20T05:50:09.975Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -17,10 +17,13 @@
 			"_id": "env_5495f58b05ed46419aa31b48a4d3d06f",
 			"color": null,
 			"created": 1552619785926,
-			"data": {},
+			"data": {
+				"heroku": "https://cashcosta.herokuapp.com/",
+				"local": "http://localhost:3000/"
+			},
 			"isPrivate": false,
 			"metaSortKey": 1552619785926,
-			"modified": 1552619785926,
+			"modified": 1553046215829,
 			"name": "New Environment",
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"_type": "environment"
@@ -222,14 +225,14 @@
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+					"value": "Bearer BQBo9geLfJ-eCH2LP89DhWRerL0KQ55zV5PVuM_8VNu38JH5Yz0QCwqjg_mQQpPJi5Y06sYjoR0h5Glcb8ffEK4CmPc_n2hvtBVaO2lJ1iWKUuypglD0Vnm0gM8WXOryJ_nouUqA__jiIV_C4G3q9nrQxuMhg4U3sQ"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552862062919,
 			"method": "GET",
-			"modified": 1552970062709,
-			"name": "clientes",
+			"modified": 1553046629228,
+			"name": "usuarios",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
 			"settingDisableRenderRequestBody": false,
@@ -238,7 +241,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/clientes",
+			"url": "localhost:3000/api/v1/usuarios",
 			"_type": "request"
 		},
 		{
@@ -251,24 +254,19 @@
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQBsefF8pR1xLvqu8wsggpp-kQh_bCmWzOo15dSb8YVNVKpSwd65KjJ3OXiBtUrUIOF-BvlENckiuk__g-IHPTQvbrYs66biT33SR0xsQwzvV_PB3fCM-ZVOXkqSeIF_5EiwdSKbTtK5tpR96ksvK0c2551hy5eAuw"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552859316136,
 			"method": "GET",
-			"modified": 1552969660008,
+			"modified": 1553059946274,
 			"name": "albums",
 			"parameters": [
 				{
-					"id": "pair_13c5a604bc8f45a9be6a1d6a18b1fa24",
-					"name": "pagina",
-					"value": "1"
-				},
-				{
 					"id": "pair_860369c81294484181dd1f7b25df4ff4",
 					"name": "limit",
-					"value": "50"
+					"value": "100"
 				},
 				{
 					"id": "pair_a9622755b2a64ed28ce303421c35d243",
@@ -284,6 +282,11 @@
 					"id": "pair_4aa31668ff4645a591a465ca1e1f8949",
 					"name": "genero",
 					"value": "mpb,classical,rock,pop"
+				},
+				{
+					"id": "pair_d6def783431b4f999ca108fbd2d3ff52",
+					"name": "pagina",
+					"value": "2"
 				}
 			],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -293,7 +296,193 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "localhost:3000/api/v1/albums/",
+			"url": "{{ local }}api/v1/albums",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3e68c4d20f5645bcbc0f39a665bba6a8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\":\"eduardotomazini@gmail.com\",\n\t\"senha\":\"pretinha\"\n}"
+			},
+			"created": 1553048263150,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552860689527.5,
+			"method": "POST",
+			"modified": 1553050760765,
+			"name": "clientes login",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cfa92b7a88a54754907fd9527dcca629",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553050570463,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_c57c748d70474e9588f74350748fbd07",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552860002831.75,
+			"method": "GET",
+			"modified": 1553050671295,
+			"name": "clientes",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2b4a97a766e5427a8267c269667eff5e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"nome\":\"teste232\",\n\t\"endereco\": \"rua 1\",\n\t\"numero\": \"100\",\n\t\"cep\":\"14000000\",\n\t\"bairro\":\"centro\",\n\t\"cidade\":\"ribeirao\",\n\t\"email\":\"nada@nada.com\",\n\t\"senha\":\"nada\"\n}"
+			},
+			"created": 1553051009034,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_c57c748d70474e9588f74350748fbd07",
+					"name": "Authorization",
+					"value": "Bearer BQD4U0IwnzxyoC4iWnWE187rz6o_Ku60ACS8fDX2M0Igr5BuzDBEamtGB7nn5xduDGnqRHiqmKvw6_UEFPy5a7H1I9q0LvX5gWVBxUIo2OGJwzP1TZ41BNV_dzfxJfDz-YXYQSgoD-gdL9Vo6ot00gIX5zDU1ULsiA"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552859659483.875,
+			"method": "POST",
+			"modified": 1553051305007,
+			"name": "clientes cadastro",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_77c6085094a74f438ba2de29ade7cb74",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\"albums\": [\n    {\n      \"id\": 15149\n    },\n    {\n      \"id\": 15270\n    }\n\t]\n}"
+			},
+			"created": 1553052794518,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_c57c748d70474e9588f74350748fbd07",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552859831157.8125,
+			"method": "POST",
+			"modified": 1553057915632,
+			"name": "clientes comprar",
+			"parameters": [],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes/comprar",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8afbd067f88744ed9ed62a6a79d13e58",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553057938312,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166201f2dc294a5092ba5cda39cfd5cd",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_c57c748d70474e9588f74350748fbd07",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMwNTAxODgsImV4cCI6MTU1MzEzNjU4OH0.O6P3Dkh5QCRpZvDhEgyQ7GbecB3cu0lABBdwJPKweRg"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552859916994.7812,
+			"method": "GET",
+			"modified": 1553060852176,
+			"name": "clientesPedidos",
+			"parameters": [
+				{
+					"id": "pair_3d27aba597d04a5e8782332f38088410",
+					"name": "idpedido",
+					"value": "1"
+				}
+			],
+			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/v1/clientes/pedidos",
 			"_type": "request"
 		}
 	]

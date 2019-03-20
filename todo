@@ -3,8 +3,7 @@ FAZER:
 - forcar login ?
 - verificar se existe logout
 
-    - tabela de pedidos
-- apidoc
+ - apidoc
     - mostrar documentacao padrao (help)
 
 
@@ -19,3 +18,4 @@ FEITO:
 - banco
     - salvar nome e email na tabela de clientes
     - mostrar albuns paginado
+- tabela de pedidos
