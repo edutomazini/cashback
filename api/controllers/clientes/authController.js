@@ -6,7 +6,7 @@ var querystring = require('querystring')
 // credenciais do desenvolvedor
 var clientId = 'fd5da17c7be649f0a484af6f6bcc3d12' // Your client id
 var clientSecret = 'f4af0d575dd24a1c8e16d27e9f6b2c71' // Your secret
-var redirectUri = 'https://cashcosta.herokuapp.com/api/v1/autenticacoes/callback' // Your redirect uri
+var redirectUri = process.env.REDIRECTURI || 'http://localhost:3000/api/v1/autenticacoes/callback' // Your redirect uri
 
 // as funcoes abaixo foram baseadas no exemplo do git:
 // https://github.com/spotify/web-api-auth-examples.git
