@@ -4,7 +4,7 @@ FAZER:
 - apidoc
     - mostrar documentacao padrao (help)
 - criar indices para genero (já q é feito busca por genero)
-- criar chave estrangeira (vale a pena?) ou pelo menos criar os indices para os ids estrangeiros (esse vale)
+- criar chave estrangeira (vale a pena?) 
 - Graphql (seria legal)
 - Teste unitario (seria legal)
 - Front basico em express
@@ -24,3 +24,4 @@ FEITO:
     - mostrar albuns paginado
 - tabela de pedidos
 - limitar dados a 100 registros por pagina
+- ou pelo menos criar os indices para os ids estrangeiros (esse vale)
