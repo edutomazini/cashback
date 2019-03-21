@@ -30,7 +30,7 @@ Isso irá preencher a tabela 'albums' com mais de 50 títulos para cada gênero.
 <p>
   Usou-se um <strong>middleware</strong> de autenticação, com o recurso de login*** da api do spotify. Assim, os recursos do usuário do spotify podem ser usados na api.
 <p>  
-  No projeto, encontra-se um arquivo .JSON com as configurações de <i>end-points</i> para facilitar os testes.
+  No projeto, encontra-se um arquivo .JSON (importe para o insominia) com as configurações de <i>end-points</i> para facilitar os testes.
   <p>
   Autenticação:
 1 - usaremos o spotify apenas para preenchimento dos dados (permissao para cadastro de cliente e preenchimento da tabela 'albums' citado acima)****;
@@ -40,4 +40,4 @@ Isso irá preencher a tabela 'albums' com mais de 50 títulos para cada gênero.
    &#42; optou-se por padronizar o plural de álbum como <i>albums</i>, como no inglês;<br>
 ** optou-se por esse procedimento manual em fornecer o 'Bearer' por ser efetuado apenas uma vez (apenas para preencher a tabela de álbuns);<br>
 *** não é possível gerar o <strong>Bearer</strong> pelo insomnia, é preciso usar o browser (digite: http://localhost:3000/api/v1/autenticacoes/login) (testado no chrome e edge)  para gerar o <strong>Bearer</strong>.<br>
-**** somente autenticações provenientes do Spotify podem criar clientes e visualizar todos os pedidos. isoo é apenas para efeito didático.
+**** somente autenticações provenientes do Spotify podem criar clientes e visualizar todos os pedidos. isso é apenas para efeito didático.
