@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-20T23:56:28.857Z",
+	"__export_date": "2019-03-21T00:34:08.209Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -91,7 +91,7 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552844349581,
-			"description": "Faz busca na api do spotify, mas usando acesso direto",
+			"description": "Faz busca na api do spotify, mas usando acesso direto\n\nNecessario o token do spotify",
 			"headers": [
 				{
 					"id": "pair_87e8d7146f634db9b9eee2f8a7be4b3a",
@@ -106,13 +106,13 @@
 				{
 					"id": "pair_84a9c1db607f402f86883ee9b38200ac",
 					"name": "Authorization",
-					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
+					"value": "Bearer BQDol2HfgUGM8DeSwluxJp_pzRonrsMX-jvF7Sd0zadMqcQ1hhwi7LB35i5bnxsHWoSnRsML6uVfWbC_Y8oIDK0DXTO1SyrgFG28eciCkTYP1LYbo4uXc_bjVD3CL6ugIEhNYccZeklrNXsmrLVr3xC6i4rpMbm79Q"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552844349581,
 			"method": "GET",
-			"modified": 1553124507378,
+			"modified": 1553128365541,
 			"name": "search spotify",
 			"parameters": [
 				{
@@ -151,18 +151,18 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552867556485,
-			"description": "Faz busca na api do spotify, mas usando a integracao",
+			"description": "Faz busca na api do spotify, mas usando a integracao\n\nNecessario token do spotify",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
+					"value": "Bearer BQDol2HfgUGM8DeSwluxJp_pzRonrsMX-jvF7Sd0zadMqcQ1hhwi7LB35i5bnxsHWoSnRsML6uVfWbC_Y8oIDK0DXTO1SyrgFG28eciCkTYP1LYbo4uXc_bjVD3CL6ugIEhNYccZeklrNXsmrLVr3xC6i4rpMbm79Q"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552850459467,
 			"method": "GET",
-			"modified": 1553124691178,
+			"modified": 1553128344628,
 			"name": "search spotify cash",
 			"parameters": [
 				{
@@ -183,7 +183,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local  }}api/v1/spotify/search",
+			"url": "{{ heroku }}api/v1/spotify/search",
 			"_type": "request"
 		},
 		{
@@ -191,18 +191,18 @@
 			"authentication": {},
 			"body": {},
 			"created": 1552877749327,
-			"description": "Retorna todos os generos acessando a api do spotify (integrando as apis)",
+			"description": "Retorna todos os generos acessando a api do spotify (integrando as apis)\n\nNecessario o token do spotify",
 			"headers": [
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer BQCO0ojmaiDfc82UjRNlQf50XLW-k8WNf5I1NjOASvAHGJ-QELq3iyXRSqOBHH7rVzPQ-mqkl5CNz9FbUj_N7tw8ZOs_xhfYKhCYE03wsSzNvFIQhQFSoWk-Itx0rhiciPw8jjuC36AMYRfHGfSQyMDwAA6imRqOSw"
+					"value": "Bearer BQDol2HfgUGM8DeSwluxJp_pzRonrsMX-jvF7Sd0zadMqcQ1hhwi7LB35i5bnxsHWoSnRsML6uVfWbC_Y8oIDK0DXTO1SyrgFG28eciCkTYP1LYbo4uXc_bjVD3CL6ugIEhNYccZeklrNXsmrLVr3xC6i4rpMbm79Q"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552856569353,
 			"method": "GET",
-			"modified": 1553124155491,
+			"modified": 1553128425189,
 			"name": "genres",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -212,7 +212,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local  }}api/v1/spotify/genres",
+			"url": "{{ heroku }}api/v1/spotify/genres",
 			"_type": "request"
 		},
 		{
@@ -225,13 +225,13 @@
 				{
 					"id": "pair_d6e3d7c111c84fee80aef7b208e65a3e",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjI4MTYsImV4cCI6MTU1MzIwOTIxNn0.kIDUoOM4MPWZizU19R0YwOpoCl8_7ckaX6Ff4dQeDkE"
+					"value": "Bearer BQDol2HfgUGM8DeSwluxJp_pzRonrsMX-jvF7Sd0zadMqcQ1hhwi7LB35i5bnxsHWoSnRsML6uVfWbC_Y8oIDK0DXTO1SyrgFG28eciCkTYP1LYbo4uXc_bjVD3CL6ugIEhNYccZeklrNXsmrLVr3xC6i4rpMbm79Q"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552862062919,
 			"method": "GET",
-			"modified": 1553123337499,
+			"modified": 1553128335444,
 			"name": "usuarios",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -241,7 +241,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/usuarios",
+			"url": "{{ heroku }}api/v1/usuarios",
 			"_type": "request"
 		},
 		{
@@ -260,7 +260,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552859316136,
 			"method": "GET",
-			"modified": 1553125585907,
+			"modified": 1553128152573,
 			"name": "albums",
 			"parameters": [
 				{
@@ -296,7 +296,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/albums",
+			"url": "{{ heroku }}api/v1/albums",
 			"_type": "request"
 		},
 		{
@@ -318,7 +318,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552860689527.5,
 			"method": "POST",
-			"modified": 1553125145170,
+			"modified": 1553128128715,
 			"name": "clientesLogin",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -328,7 +328,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/clientes/login",
+			"url": "{{ heroku }}api/v1/clientes/login",
 			"_type": "request"
 		},
 		{
@@ -355,7 +355,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552861376223.25,
 			"method": "GET",
-			"modified": 1553124615275,
+			"modified": 1553128116769,
 			"name": "clientes",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -365,7 +365,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/clientes",
+			"url": "{{ heroku }}api/v1/clientes",
 			"_type": "request"
 		},
 		{
@@ -392,7 +392,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552861032875.375,
 			"method": "POST",
-			"modified": 1553124632468,
+			"modified": 1553128122082,
 			"name": "clientesCadastro",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -402,7 +402,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/clientes",
+			"url": "{{ heroku }}api/v1/clientes",
 			"_type": "request"
 		},
 		{
@@ -410,7 +410,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\"albums\": [\n    {\n      \"id\": 1092\n    },\n    {\n      \"id\": 1093\n    },\n\t    {\n      \"id\": 1094\n    }\n\t]\n}"
+				"text": "{\n\"albums\": [\n    {\n      \"id\": 15444\n    },\n    {\n      \"id\": 15445\n    },\n\t    {\n      \"id\": 15445\n    }\n\t]\n}"
 			},
 			"created": 1553052794518,
 			"description": "Efetua pedido do cliente, calculo de cashback de acordo com o dia comprado.",
@@ -423,13 +423,13 @@
 				{
 					"id": "pair_c57c748d70474e9588f74350748fbd07",
 					"name": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjo2LCJpYXQiOjE1NTMxMjIyNTYsImV4cCI6MTU1MzIwODY1Nn0.30nR4wrIrD9-Z_lmbbVCFDHhu2LZ4-Dy1w9igSAVDAs"
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlX2lkIjoxLCJpYXQiOjE1NTMxMjUyMTYsImV4cCI6MTU1MzIxMTYxNn0.xFuU9ag6-x_1FPlIhA2W9xMfu7AwaDwmJBy-ob9h_Wc"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552859831157.8125,
 			"method": "POST",
-			"modified": 1553123443706,
+			"modified": 1553128142557,
 			"name": "clientesPedidos",
 			"parameters": [],
 			"parentId": "wrk_f13f63607dce407cbfe59370a0e08bcb",
@@ -466,13 +466,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1552859916994.7812,
 			"method": "GET",
-			"modified": 1553125415153,
+			"modified": 1553128137354,
 			"name": "clientesPedidos",
 			"parameters": [
 				{
 					"id": "pair_3d27aba597d04a5e8782332f38088410",
 					"name": "idpedido",
-					"value": ""
+					"value": "10"
 				},
 				{
 					"id": "pair_d77b007a98f04482acb9b3edf93d10ee",
@@ -502,7 +502,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ local }}api/v1/clientes/pedido",
+			"url": "{{ heroku }}api/v1/clientes/pedido",
 			"_type": "request"
 		}
 	]
