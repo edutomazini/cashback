@@ -40,4 +40,4 @@ Isso irá preencher a tabela 'albums' com mais de 50 títulos para cada gênero.
    &#42; optou-se por padronizar o plural de álbum como <i>albums</i>, como no inglês;<br>
 ** optou-se por esse procedimento manual em fornecer o 'Bearer' por ser efetuado apenas uma vez (apenas para preencher a tabela de álbuns);<br>
 *** não é possível gerar o <strong>Bearer</strong> pelo insomnia, é preciso usar o browser (digite: http://localhost:3000/api/v1/autenticacoes/login) (testado no chrome e edge)  para gerar o <strong>Bearer</strong>.<br>
-**** podemos usar a integração de contas do spotify com as contas da 'loja' de discos, mas para efeito didático iremos abdicar desse recurso;
+**** somente autenticações provenientes do Spotify podem criar clientes e visualizar todos os pedidos. isoo é apenas para efeito didático.
