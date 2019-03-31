@@ -4,11 +4,12 @@ o projeto foi desenvolvido em node.js
 <p>
 clone ou faça o <i>download</i> do projeto e siga os passos abaixo:<br>
 1 - 'npm install';<br>
-2 - crie um banco mysql com o nome de 'cachback' (ou um nome de sua escolha, mas não esqueça de informá-lo nas configurações...);<br>
-3 - edite as credenciais de conexão com o banco no arquivo 'knexfile.js';<br>
-4 - execute 'knex migrate:latest';<br>
- 5 - execute 'knex seed:run' para preencher a tabela com as taxas de <i>cachback</i>;<br>
- 6 - execute o procedimento abaixo para alimentar a tabela de <i>albums</i>*:<br>
+2 - 'npm install mysql ';<br>
+3 - crie um banco mysql com o nome de 'cachback' (ou um nome de sua escolha, mas não esqueça de informá-lo nas configurações...);<br>
+4 - edite as credenciais de conexão com o banco no arquivo 'knexfile.js';<br>
+5 - execute 'knex migrate:latest';<br>
+6 - execute 'knex seed:run' para preencher a tabela com as taxas de <i>cachback</i>;<br>
+7 - execute o procedimento abaixo para alimentar a tabela de <i>albums</i>*:<br>
 <p>
 a busca por álbum por gênero não está retornando dados. (https://github.com/spotify/web-api/issues/157)<br>
 https://api.spotify.com/v1/search?q=genre%3A%22acoustic%22&limit=10&offset=0&type=album<br>
